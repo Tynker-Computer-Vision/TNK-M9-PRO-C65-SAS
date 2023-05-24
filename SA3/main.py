@@ -14,7 +14,7 @@ orignalImage = cv2.imread(inputPath)
 
 grayscaleImage = cv2.cvtColor(orignalImage, cv2.COLOR_BGR2GRAY)
 
-# Save the oil painting effect image to disk
+
 outputPath = 'converted/grayScale.png'
 cv2.imwrite(outputPath, grayscaleImage)
 
@@ -22,7 +22,7 @@ cv2.imwrite(outputPath, grayscaleImage)
 cv2.imshow('Grayscale Image', grayscaleImage)
 cv2.waitKey(0)
 
-# Display a message indicating that the image has been saved
+
 print('Converted Grayscale image saved to disk : ' + outputPath)
 
 
