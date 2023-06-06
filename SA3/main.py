@@ -6,13 +6,13 @@ import cv2
 inputPath = 'static/lion.png'
 
 
-orignalImage = cv2.imread(inputPath)
+originalImage = cv2.imread(inputPath)
 
 
 # ------------Convert image to Grayscale --------------
 
 
-grayscaleImage = cv2.cvtColor(orignalImage, cv2.COLOR_BGR2GRAY)
+grayscaleImage = cv2.cvtColor(originalImage, cv2.COLOR_BGR2GRAY)
 
 
 outputPath = 'converted/grayScale.png'
@@ -28,7 +28,7 @@ print('Converted Grayscale image saved to disk : ' + outputPath)
 
 # ----------------- Convert image to Oil Painting -----------------------
 
-oilImg = cv2.xphoto.oilPainting(orignalImage, size=7, dynRatio=1)
+oilImg = cv2.xphoto.oilPainting(originalImage, size=7, dynRatio=1)
 
 # Save the oil painting effect image to disk
 outputPath = 'converted/oilPainting.png'

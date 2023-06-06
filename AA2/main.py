@@ -4,10 +4,10 @@ import cv2
 inputPath = 'static/img1.png'
 
 # Load the color image
-orignalImage = cv2.imread(inputPath)
+originalImage = cv2.imread(inputPath)
 
 
-rotatedImage = cv2.rotate(orignalImage, cv2.ROTATE_90_CLOCKWISE)
+rotatedImage = cv2.rotate(originalImage, cv2.ROTATE_90_CLOCKWISE)
 
 outputPath = 'converted/rotated.png'
 cv2.imwrite(outputPath, rotatedImage)
